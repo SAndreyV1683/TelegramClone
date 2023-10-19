@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.screens.register.EnterCodeFragment">
+    tools:context=".ui.fragments.EnterCodeFragment">
 
     <ImageView
         android:id="@+id/register_image"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:gravity="center"
-        android:layout_margin="@dimen/app_small_margin"
+        android:layout_margin="@dimen/vertical_margin"
         android:textColor="@color/colorBlack"
         android:textSize="@dimen/normalText"
         android:text="@string/register_text_enter_code"
@@ -37,13 +37,12 @@
         android:layout_height="wrap_content"
         style="@style/smallText"
         android:gravity="center"
-        android:layout_margin="@dimen/app_small_margin"
+        android:layout_margin="@dimen/vertical_margin"
         android:text="@string/register_text_we_sent"
         app:layout_constraintTop_toBottomOf="@+id/register_text_enter_code"/>
 
     <EditText
         style="@style/editText"
-        android:layout_width="wrap_content"
         android:id="@+id/register_input_code"
         android:autofillHints=""
         android:maxLength="6"
